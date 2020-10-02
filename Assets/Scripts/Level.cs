@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -11,4 +12,10 @@ public class Level : ScriptableObject
     public int MainLettersAmount = 2;
     [Label("Остальных букв на поле")]
     [Range(0, 500)] public int OtherLettersAmount = 60;
+    [Label("Всего букв на поле"),SerializeField, ReadOnly] private int _allLettersCount = 0;
+
+    private void OnValidate()
+    {
+        _allLettersCount = Words.SelectMany(x=>x.ToCharArray()).Count(x => x != ' ') * MainLettersAmount + OtherLettersAmount;
+    }
 }

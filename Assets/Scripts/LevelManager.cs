@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField, ReadOnly] private int _currentLevel;
     [SerializeField] private int _levelToChange = 1;
     [SerializeField] private List<LetterBox> _letterBoxes;
-    private Level InGameLevel => _levels[_currentLevel];
+    private Level InGameLevel => _levels[_currentLevel-1];
     private int _currentWordNumber = 0;
     private string CurrentWord => InGameLevel.Words[_currentWordNumber];
     private Letter[] _allLetters;
@@ -32,12 +32,15 @@ public class LevelManager : MonoBehaviour
         _currentWordNumber++;
         if (InGameLevel.Words.Count <= _currentWordNumber)
         {
+            _nextLevelUi.Show(_currentLevel, string.Join(" ", InGameLevel.Words));
+            _currentLevel++;
+            _currentWordNumber = 0;
+            _nextLevelUi.gameObject.SetActive(true);
             //TODO: Загрузка нового уровня
         }
         else
         {
-            _nextLevelUi.gameObject.SetActive(true);
-            _nextLevelUi.Show(_currentLevel, _letterBoxes.Take(_currentWordNumber+1).ToList(), InGameLevel.Words.Count);
+            LoadWord();
         }
     }
     private void Start()
@@ -71,7 +74,7 @@ public class LevelManager : MonoBehaviour
     }
     #endregion
 
-    private void LoadLevel()
+    public void LoadLevel()
     {
         //TODO: Логика уровня
         
@@ -85,27 +88,20 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        var otherLetters = _allLetters.Select(x => x.AlphabetLetter).Where(x => !allLettersInLevel.Contains(x));
-        foreach (var letter in otherLetters)
+        var otherLetters = _allLetters.Select(x => x.AlphabetLetter).Where(x => !allLettersInLevel.Contains(x)).ToList();
+        for (int i = 0; i < InGameLevel.OtherLettersAmount; i++)
         {
-            for (int i = 0; i < InGameLevel.MainLettersAmount; i++)
-            {
-                var alphabetLetterGo = Instantiate(_allLetters.First(x => x.AlphabetLetter == letter), new Vector3(100, 100), Quaternion.identity, transform);
-                alphabetLetterGo.Initialize(_spawnArea, transform.position + _spawnAreaMargin, _lettersColors[Random.Range(0, _lettersColors.Count-1)]);
-            }
+            var randNum = Random.Range(0, otherLetters.Count - 1);
+            char otherLetter = otherLetters[randNum];
+            var alphabetLetterGo = Instantiate(_allLetters.First(x => x.AlphabetLetter == otherLetter), new Vector3(100, 100), Quaternion.identity, transform);
+            alphabetLetterGo.Initialize(_spawnArea, transform.position + _spawnAreaMargin, _lettersColors[Random.Range(0, _lettersColors.Count-1)]);
         }
         
         LoadWord();
     }
 
-    public void LoadWord()
+    private void LoadWord()
     {
-        if (InGameLevel.Words.Count <= _currentWordNumber)
-        {
-            _currentLevel++;
-            LoadLevel();
-            return;
-        }
         for (int i = 0; i < _letterBoxes.Count; i++)
         {
             var letterToInsert = CurrentWord.Length <= i ? ' ' : CurrentWord[i];

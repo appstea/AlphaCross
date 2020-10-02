@@ -17,3 +17,6 @@ MonoBehaviour:
   - thinking
   - start
   - doing
+  MainLettersAmount: 4
+  OtherLettersAmount: 60
+  _allLettersCount: 148
