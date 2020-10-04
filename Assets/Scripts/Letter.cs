@@ -3,13 +3,14 @@
 public class Letter : MonoBehaviour
 {
     public char AlphabetLetter;
+    public Vector3 CenterPoint;
 
     public void Initialize(Vector3 spawnArea, Vector3 spawnCenter, Color color)
     {
-        var meshSize = GetComponent<MeshRenderer>().bounds.size;
-        var maxSide = Mathf.Max(Mathf.Max(meshSize.x, meshSize.y), meshSize.z);
-        var maxBox = new Vector3(maxSide,maxSide,maxSide);
-        var correctSpawnArea = spawnArea - new Vector3(maxSide, maxSide, maxSide);
+        CenterPoint = GetComponent<BoxCollider>().bounds.extents;
+        CenterPoint = new Vector3(CenterPoint.x, 0, CenterPoint.y);
+        var maxBox = new Vector3(CenterPoint.y*2,CenterPoint.y*2,CenterPoint.y*2);
+        var correctSpawnArea = spawnArea - maxBox;
         var newPosition = Helper.RandomPointInBox(spawnCenter, correctSpawnArea);
         while (Physics.BoxCast(newPosition, maxBox, Vector3.zero, out RaycastHit _))
         {

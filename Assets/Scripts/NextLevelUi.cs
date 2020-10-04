@@ -10,6 +10,7 @@ public class NextLevelUi : MonoBehaviour
 
     public void Show(int currentLevel, string openedWords)
     {
+        gameObject.SetActive(true);
         _levelText.text = $"Level {currentLevel}";
         _wordsText.text = openedWords;
     }

@@ -13,6 +13,9 @@ public class Level : ScriptableObject
     [Label("Остальных букв на поле")]
     [Range(0, 500)] public int OtherLettersAmount = 60;
     [Label("Всего букв на поле"),SerializeField, ReadOnly] private int _allLettersCount = 0;
+    [Header("Управление таймером")]
+    public int Minutes = 15;
+    [Range(0,60)] public int Seconds = 0;
 
     private void OnValidate()
     {

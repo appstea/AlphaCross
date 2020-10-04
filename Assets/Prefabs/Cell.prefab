@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 230e73dbf65ee2a479d096e74b1ad9f6, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -89,10 +89,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsHover: 0
+  Letter: 0
   _emptyCell: {fileID: 21300000, guid: 230e73dbf65ee2a479d096e74b1ad9f6, type: 3}
   _filledCell: {fileID: 21300000, guid: e07ed3e803a104146a3929ec7fa30754, type: 3}
   _emptyColor: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
   _filledColor: {r: 0.29411766, g: 0.45098042, b: 1, a: 1}
+  LetterBoxState: 2
 --- !u!1 &5734660186436588767
 GameObject:
   m_ObjectHideFlags: 0

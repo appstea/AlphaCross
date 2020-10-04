@@ -4,12 +4,19 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public class MoveControl : MonoBehaviour
 {
+    [SerializeField] private UnityEvent _onWordCollected;
+    [SerializeField] private GraphicRaycaster _raycaster;
+    [SerializeField] private EventSystem _eventSystem;
     [SerializeField] private float _distanceAboveFloor = 1;
     [SerializeField] private List<LetterBox> _letterBoxes;
+    private PointerEventData _pointerEventData;
     private Camera _camera;
     private Vector3 _cameraFloorPosition;
     private float _trianglesDelta;
@@ -25,64 +32,104 @@ public class MoveControl : MonoBehaviour
 
     private void Update()
     {
+        if (GameState.Instance.State != State.InGame)
+        {
+            return;
+        }
+
+        MoveLetter();
+    }
+
+    private void MoveLetter()
+    {
+        
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+            OnMouseButtonDown();
+        }
+        else if (Input.GetMouseButtonUp(0) && _attachedLetter != null)
+        {
+            OnMouseButtonUp();
+        }
+        else if (Input.GetMouseButton(0) && _attachedLetter != null)
+        {
+            OnMouseButton();
+        }
+    }
+
+    private void OnMouseButtonDown()
+    {
+        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
         
-            if (Physics.Raycast(ray, out RaycastHit hit, 100, 1<<0)) 
+        if (Physics.Raycast(ray, out RaycastHit hit, 100, 1<<0)) 
+        {
+            if (hit.rigidbody.TryGetComponent(out Letter letter))
             {
-                if (hit.rigidbody.TryGetComponent(out Letter letter))
-                {
-                    hit.rigidbody.isKinematic = true;
-                    _attachedLetter = letter.transform;
-                    _letter = letter;
-                }
+                hit.rigidbody.isKinematic = true;
+                _attachedLetter = letter.transform;
+                _letter = letter;
             }
         }
+    }
 
-        if (Input.GetMouseButtonUp(0))
+    private void OnMouseButtonUp()
+    {
+        LetterBox letterBox = GetLetterBox();
+        if (letterBox != null && letterBox.Letter == _letter.AlphabetLetter && letterBox.LetterBoxState!= LetterBoxState.Filled)
         {
-            if (_attachedLetter != null)
+            letterBox.FillCell();
+            Destroy(_attachedLetter.gameObject);
+            _attachedLetter = null;
+            //Проверка на полностью составленное слово
+            if (_letterBoxes.All(x => x.LetterBoxState != LetterBoxState.Empty))
             {
-                var letterBox = _letterBoxes.FirstOrDefault(x => x.IsHover);
-                if (letterBox != null && letterBox.Letter == _letter.AlphabetLetter && letterBox.LetterBoxState!= LetterBoxState.Filled)
-                {
-                    letterBox.FillCell();
-                    //TODO: возвращать в пул
-                    Destroy(_attachedLetter.gameObject);
-                    _attachedLetter = null;
-                    //Проверка на полностью составленное слово
-                    if (_letterBoxes.All(x => x.LetterBoxState != LetterBoxState.Empty))
-                    {
-                        GetComponent<LevelManager>().WordCollected();
-                    }
-                } else if (letterBox != null)
-                {
-                    var letterRig = _attachedLetter.GetComponent<Rigidbody>();
-                    letterRig.isKinematic = false;
-                    letterRig.AddForce(Vector3.forward*2, ForceMode.Impulse);
-                    _attachedLetter = null;
-                }
-                else
-                {
-                    _attachedLetter.GetComponent<Rigidbody>().isKinematic = false;
-                    _attachedLetter = null;
-                }
+                _onWordCollected?.Invoke();
             }
-        }
-
-        if (Input.GetMouseButton(0) && _attachedLetter != null)
+        } else if (letterBox != null)
         {
-            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 30, 1<<8))
-            {
-                //Position
-                var deltaLength = Vector3.Lerp(_cameraFloorPosition, hit.point, 1 - _trianglesDelta);
-                _attachedLetter.position = Vector3.Lerp(_attachedLetter.position, deltaLength + new Vector3(0, _distanceAboveFloor, 0), Time.deltaTime*7);
+            var letterRig = _attachedLetter.GetComponent<Rigidbody>();
+            letterRig.isKinematic = false;
+            letterRig.AddForce(Vector3.forward*2, ForceMode.Impulse);
+            _attachedLetter = null;
+        }
+        else
+        {
+            _attachedLetter.GetComponent<Rigidbody>().isKinematic = false;
+            _attachedLetter = null;
+        }
+    }
+
+    private void OnMouseButton()
+    {
+        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit, 30, 1<<8))
+        {
+            //Position
+            var deltaLength = Vector3.Lerp(_cameraFloorPosition, hit.point, 1 - _trianglesDelta);
+            _attachedLetter.position = Vector3.Lerp(_attachedLetter.position, deltaLength + new Vector3(0, _distanceAboveFloor, 0) - _letter.CenterPoint, Time.deltaTime*7);
                 
-                //Rotation
-                _attachedLetter.rotation = Quaternion.Lerp(_attachedLetter.rotation, Quaternion.Euler(-90,180,0), Time.deltaTime * 5);
+            //Rotation
+            _attachedLetter.rotation = Quaternion.Lerp(_attachedLetter.rotation, Quaternion.Euler(-90,180,0), Time.deltaTime * 5);
+        }
+    }
+
+    private LetterBox GetLetterBox()
+    {
+        _pointerEventData = new PointerEventData(_eventSystem) {position = Input.mousePosition};
+        List<RaycastResult> results = new List<RaycastResult>();
+
+        //Raycast using the Graphics Raycaster and mouse click position
+        _raycaster.Raycast(_pointerEventData, results);
+
+        //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
+        foreach (RaycastResult result in results)
+        {
+            if(result.gameObject.TryGetComponent(out LetterBox lb))
+            {
+                return lb;
             }
         }
+
+        return null;
     }
 }

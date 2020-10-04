@@ -10,6 +10,7 @@ using Random = UnityEngine.Random;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public class LevelManager : MonoBehaviour
 {
+    [SerializeField] private TimerControl _timerControl;
     [SerializeField] private NextLevelUi _nextLevelUi;
     [Header("Spawn Area Size")]
     [SerializeField] private Vector3 _spawnArea;
@@ -26,23 +27,6 @@ public class LevelManager : MonoBehaviour
     private int _currentWordNumber = 0;
     private string CurrentWord => InGameLevel.Words[_currentWordNumber];
     private Letter[] _allLetters;
-
-    public void WordCollected()
-    {
-        _currentWordNumber++;
-        if (InGameLevel.Words.Count <= _currentWordNumber)
-        {
-            _nextLevelUi.Show(_currentLevel, string.Join(" ", InGameLevel.Words));
-            _currentLevel++;
-            _currentWordNumber = 0;
-            _nextLevelUi.gameObject.SetActive(true);
-            //TODO: Загрузка нового уровня
-        }
-        else
-        {
-            LoadWord();
-        }
-    }
     private void Start()
     {
         _allLetters = Resources.LoadAll<Letter>("Alphabet");
@@ -73,11 +57,39 @@ public class LevelManager : MonoBehaviour
         Gizmos.DrawWireCube(transform.position+_spawnAreaMargin, _spawnArea);
     }
     #endregion
+    
+
+    public void WordCollected()
+    {
+        _timerControl.EndLevel(_currentWordNumber);
+        _currentWordNumber++;
+        if (InGameLevel.Words.Count <= _currentWordNumber)
+        {
+            //Загрузка нового уровня
+            _nextLevelUi.Show(_currentLevel, string.Join(" ", InGameLevel.Words));
+            _currentLevel++;
+            _currentWordNumber = 0;
+            _timerControl.ChangeTimerPause();
+        }
+        else
+        {
+            LoadWord();
+        }
+    }
 
     public void LoadLevel()
     {
-        //TODO: Логика уровня
+        GameState.Instance.State = State.InGame;
+        _timerControl.Initialize(InGameLevel, _currentLevel);
         
+        //Удаляем старые буквы
+        var allLetters = FindObjectsOfType<Letter>();
+        foreach (var allLetter in allLetters)
+        {
+            Destroy(allLetter.gameObject);
+        }
+        
+        //Загружаем основные буквы
         var allLettersInLevel = InGameLevel.Words.SelectMany(x => x.ToLower().ToCharArray()).Where(x=>x != ' ').ToList();
         foreach (var letter in allLettersInLevel)
         {
@@ -87,7 +99,8 @@ public class LevelManager : MonoBehaviour
                 alphabetLetterGo.Initialize(_spawnArea, transform.position + _spawnAreaMargin, _lettersColors[Random.Range(0, _lettersColors.Count-1)]);
             }
         }
-
+        
+        //Загружаем неиспользуемые буквы
         var otherLetters = _allLetters.Select(x => x.AlphabetLetter).Where(x => !allLettersInLevel.Contains(x)).ToList();
         for (int i = 0; i < InGameLevel.OtherLettersAmount; i++)
         {
@@ -98,6 +111,12 @@ public class LevelManager : MonoBehaviour
         }
         
         LoadWord();
+    }
+
+    public void Replay()
+    {
+        _currentWordNumber = 0;
+        LoadLevel();
     }
 
     private void LoadWord()

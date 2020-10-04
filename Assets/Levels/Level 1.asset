@@ -18,6 +18,6 @@ MonoBehaviour:
   - keeps the
   - doctor
   - away
-  MainLettersAmount: 4
+  MainLettersAmount: 2
   OtherLettersAmount: 60
-  _allLettersCount: 168
+  _allLettersCount: 114

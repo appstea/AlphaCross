@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 435814}
   - component: {fileID: 3377510}
   - component: {fileID: 2349482}
-  - component: {fileID: 2179259149462997315}
   - component: {fileID: 4698957242955825572}
   - component: {fileID: -7484228636282885892}
+  - component: {fileID: 1212543798953588521}
   m_Layer: 0
   m_Name: alp_L
   m_TagString: Untagged
@@ -82,20 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2179259149462997315
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181676}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7073b40a85b724b00a3020278467982d, type: 3}
 --- !u!114 &4698957242955825572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphabetLetter: 108
+  CenterPoint: {x: 0, y: 0, z: 0}
 --- !u!54 &-7484228636282885892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,3 +112,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1212543798953588521
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0024100475, y: 0.0047488115, z: 0.0009200001}
+  m_Center: {x: -0.0012050237, y: 0.0023744057, z: 0}
