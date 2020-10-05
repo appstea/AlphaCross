@@ -28,6 +28,7 @@ public class Hint : MonoBehaviour
             var allFreeLetters = _letterBoxes.Where(x => x.LetterBoxState == LetterBoxState.Empty).ToList();
             var targetLetter = allFreeLetters[Random.Range(0, allFreeLetters.Count - 1)];
             targetLetter.FillCell();
+            GameState.Instance.CheckWordOnCollection();
         }
     }
 

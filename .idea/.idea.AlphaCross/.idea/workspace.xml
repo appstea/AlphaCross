@@ -42,6 +42,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Level 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_A.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_A.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_B.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_B.prefab" afterDir="false" />
@@ -178,7 +179,7 @@
       <workItem from="1601294430703" duration="42721000" />
       <workItem from="1601658704031" duration="1829000" />
       <workItem from="1601718188191" duration="1308000" />
-      <workItem from="1601751121417" duration="11159000" />
+      <workItem from="1601751121417" duration="11758000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601652810768</created>

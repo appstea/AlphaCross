@@ -81,10 +81,7 @@ public class MoveControl : MonoBehaviour
             Destroy(_attachedLetter.gameObject);
             _attachedLetter = null;
             //Проверка на полностью составленное слово
-            if (_letterBoxes.All(x => x.LetterBoxState != LetterBoxState.Empty))
-            {
-                _onWordCollected?.Invoke();
-            }
+            GameState.Instance.CheckWordOnCollection();
         } else if (letterBox != null)
         {
             var letterRig = _attachedLetter.GetComponent<Rigidbody>();
