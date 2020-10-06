@@ -25,13 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81f1b3a4-79d3-472b-99c0-667b1ec68d02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Levels/Level 3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Levels/Level 3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +58,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ConfettiShower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hint.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +124,7 @@
       <workItem from="1601718188191" duration="1308000" />
       <workItem from="1601751121417" duration="11758000" />
       <workItem from="1601896360581" duration="2827000" />
-      <workItem from="1601979637823" duration="1636000" />
+      <workItem from="1601979637823" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601652810768</created>
@@ -186,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="502" y="198" key="GrepConsoleSettings/0.0.1920.1080@0.0.1920.1080" timestamp="1601652847161" />
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1601654833779">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1601981401460">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601654833779" />
-    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1601654833778">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601981401460" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1601981401460">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601654833778" />
-    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1601654833778">
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601981401460" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1601981401460">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601654833778" />
-    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1601654833778">
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601981401460" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1601981401460">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601654833778" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601981401460" />
     <state width="1877" height="292" key="GridCell.Tab.1.bottom" timestamp="1601654833595">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
