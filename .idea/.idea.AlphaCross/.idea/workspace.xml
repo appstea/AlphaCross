@@ -25,66 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81f1b3a4-79d3-472b-99c0-667b1ec68d02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TimerLine.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TimerLine.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TimerLineFree.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TimerLineFree.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ModifiedSingleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ModifiedSingleton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/State.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Levels/Level 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Levels/Level 3.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlphaCross/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_A.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_A.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_B.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_B.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_C.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_C.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_D.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_E.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_E.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_F.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_F.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_G.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_G.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_H.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_H.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_I.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_I.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_J.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_J.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_K.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_K.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_L.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_L.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_M.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_M.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_N.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_N.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_O.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_O.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_P.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_P.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_Q.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_Q.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_R.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_R.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_S.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_S.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_T.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_T.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_U.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_U.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_V.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_V.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_W.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_W.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_X.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_X.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_Y.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_Y.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_Z.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Alphabet/alp_Z.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Letter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Letter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NextLevelUi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NextLevelUi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/empty cell.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/empty cell.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/filled cell.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/filled cell.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/hint icon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/hint icon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/hint.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/hint.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/next.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/next.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/pause icon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/pause icon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/pause.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/pause.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI/3X/timer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI/3X/timer.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConfettiShower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LetterBox.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -114,10 +62,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ModifiedSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ConfettiShower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -158,10 +107,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18320">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="18320" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -180,6 +129,8 @@
       <workItem from="1601658704031" duration="1829000" />
       <workItem from="1601718188191" duration="1308000" />
       <workItem from="1601751121417" duration="11758000" />
+      <workItem from="1601896360581" duration="2827000" />
+      <workItem from="1601979637823" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1601652810768</created>
@@ -206,6 +157,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

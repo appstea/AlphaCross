@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
     {
         _allLetters = Resources.LoadAll<Letter>("Alphabet");
         Debug.Log($"Загружено {_allLetters.Length} символов.");
-
+        _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
         LoadLevel();
     }
 
@@ -67,7 +67,15 @@ public class LevelManager : MonoBehaviour
         {
             //Загрузка нового уровня
             _nextLevelUi.Show(_currentLevel, string.Join(" ", InGameLevel.Words));
-            _currentLevel++;
+            if (_levels.Count > _currentLevel)
+            {
+                _currentLevel++;
+            }
+            else
+            {
+                _currentLevel = 1;
+            }
+            PlayerPrefs.SetInt("CurrentLevel", _currentLevel);
             _currentWordNumber = 0;
             _timerControl.ChangeTimerPause();
         }

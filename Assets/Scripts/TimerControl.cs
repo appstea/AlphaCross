@@ -30,6 +30,7 @@ public class TimerControl : MonoBehaviour
         if (_timerLines.Any())
         {
             _timerLines.ForEach(Destroy);
+            _timerLines.Clear();
         }
 
         _levelText.text = $"Level {levelNumber}";

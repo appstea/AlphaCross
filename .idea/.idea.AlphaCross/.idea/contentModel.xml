@@ -11,6 +11,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Additional" t="Include">
+          <e p="Confetti FX" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
           <e p="NaughtyAttributes" t="Include">
             <e p="Scripts" t="Include">
               <e p="Core" t="Include">
@@ -150,6 +153,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ConfettiShower.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
           <e p="Helper.cs" t="Include" />
           <e p="Hint.cs" t="Include" />
