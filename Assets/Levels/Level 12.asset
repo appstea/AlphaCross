@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee45a9b8ce4b4463a679894c626f4b04, type: 3}
-  m_Name: Level 3
+  m_Name: Level 12
   m_EditorClassIdentifier: 
   Words:
-  - stop
-  - thinking
-  - start
-  - doing
-  MainLettersAmount: 4
-  OtherLettersAmount: 51
-  _allLettersCount: 139
+  - work hard
+  - be kind
+  - and amazing
+  - things will
+  - happen
+  MainLettersAmount: 2
+  OtherLettersAmount: 35
+  _allLettersCount: 115
   Minutes: 15
   Seconds: 0

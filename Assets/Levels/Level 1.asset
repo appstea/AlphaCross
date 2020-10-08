@@ -19,5 +19,7 @@ MonoBehaviour:
   - doctor
   - away
   MainLettersAmount: 2
-  OtherLettersAmount: 60
-  _allLettersCount: 114
+  OtherLettersAmount: 32
+  _allLettersCount: 86
+  Minutes: 15
+  Seconds: 0
