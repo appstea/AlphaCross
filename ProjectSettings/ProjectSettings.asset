@@ -172,7 +172,7 @@ PlayerSettings:
   applicationIdentifier:
     iPhone: com.appstea.words
   buildNumber:
-    iPhone: 5
+    iPhone: 7
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
@@ -872,7 +872,7 @@ PlayerSettings:
   projectName: 
   organizationId: 
   cloudEnabled: 0
-  enableNativePlatformBackendsForNewInputSystem: 1
-  disableOldInputManagerSupport: 1
+  enableNativePlatformBackendsForNewInputSystem: 0
+  disableOldInputManagerSupport: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
