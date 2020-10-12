@@ -69,6 +69,7 @@ public class LevelManager : MonoBehaviour
             _nextLevelUi.Show(_currentLevel, string.Join(" ", InGameLevel.Words));
             if (_levels.Count > _currentLevel)
             {
+                AnalyticsManager.DidFinishLevel(_currentLevel);
                 _currentLevel++;
             }
             else

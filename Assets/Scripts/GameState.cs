@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using GameAnalyticsSDK;
 
 public class GameState : ModifiedSingleton<GameState>
 {
@@ -14,6 +15,7 @@ public class GameState : ModifiedSingleton<GameState>
 
     private void Start()
     {
+        GameAnalytics.Initialize();
         _letterBoxes = FindObjectsOfType<LetterBox>();
     }
 
