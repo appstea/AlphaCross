@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Words:
   - if you
-  - can dream it
-  - you can do it
+  - can     dream it
+  - you can
+  - do it
   MainLettersAmount: 2
   OtherLettersAmount: 106
   _allLettersCount: 156

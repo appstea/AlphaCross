@@ -15,9 +15,9 @@ MonoBehaviour:
   Words:
   - one day
   - or day one
-  - you decide
+  - you     decide
   MainLettersAmount: 2
-  OtherLettersAmount: 51
-  _allLettersCount: 97
+  OtherLettersAmount: 60
+  _allLettersCount: 106
   Minutes: 15
   Seconds: 0

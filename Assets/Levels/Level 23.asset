@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Level 23
   m_EditorClassIdentifier: 
   Words:
-  - you never know
-  - what you can
-  - do until you
+  - you     never
+  - know
+  - what you
+  - can do
+  - until   you
   - try
   MainLettersAmount: 2
   OtherLettersAmount: 97

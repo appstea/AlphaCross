@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Level 15
   m_EditorClassIdentifier: 
   Words:
-  - what defines
-  - us is how well
-  - we rise after
+  - what    defines
+  - us is how
+  - well we rise
+  - after
   - falling
   MainLettersAmount: 2
-  OtherLettersAmount: 35
-  _allLettersCount: 115
+  OtherLettersAmount: 60
+  _allLettersCount: 140
   Minutes: 20
   Seconds: 0

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Level 24
   m_EditorClassIdentifier: 
   Words:
-  - all we can
-  - do is the best
-  - we can do
+  - all we
+  - can do
+  - is the  best
+  - we can  do
   MainLettersAmount: 2
-  OtherLettersAmount: 106
-  _allLettersCount: 158
+  OtherLettersAmount: 124
+  _allLettersCount: 176
   Minutes: 15
   Seconds: 0

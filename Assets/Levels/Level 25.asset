@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Level 25
   m_EditorClassIdentifier: 
   Words:
-  - a winner is a
-  - dreamer who
-  - never gives up
+  - a winner
+  - is a dreamer
+  - who     never
+  - gives up
   MainLettersAmount: 2
-  OtherLettersAmount: 85
-  _allLettersCount: 149
+  OtherLettersAmount: 107
+  _allLettersCount: 171
   Minutes: 20
   Seconds: 0

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Words:
   - nothing
-  - will work
-  - unless you do
+  - will    work
+  - unless
+  - you do
   MainLettersAmount: 2
-  OtherLettersAmount: 51
-  _allLettersCount: 103
+  OtherLettersAmount: 81
+  _allLettersCount: 133
   Minutes: 15
   Seconds: 0

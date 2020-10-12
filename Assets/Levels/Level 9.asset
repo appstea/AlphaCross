@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Words:
   - in a gentle
-  - way you can
-  - shake the
-  - world
+  - way you
+  - can shake
+  - the world
   MainLettersAmount: 2
   OtherLettersAmount: 54
   _allLettersCount: 116

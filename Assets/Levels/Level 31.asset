@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level 31
   m_EditorClassIdentifier: 
   Words:
-  - a goal is a
-  - dream
+  - a goal is
+  - a dream
   - with a
   - deadline
   MainLettersAmount: 2

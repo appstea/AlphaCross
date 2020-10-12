@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Level 32
   m_EditorClassIdentifier: 
   Words:
-  - take the risk
+  - take
+  - the risk
   - or lose
   - the chance
   MainLettersAmount: 2

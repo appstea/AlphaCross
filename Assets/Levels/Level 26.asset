@@ -18,7 +18,7 @@ MonoBehaviour:
   - heart
   - tells you
   MainLettersAmount: 2
-  OtherLettersAmount: 75
-  _allLettersCount: 129
+  OtherLettersAmount: 118
+  _allLettersCount: 172
   Minutes: 15
   Seconds: 0

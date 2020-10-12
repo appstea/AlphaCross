@@ -15,10 +15,10 @@ MonoBehaviour:
   Words:
   - hold the
   - vision
-  - trust the
+  - trust   the
   - process
   MainLettersAmount: 2
-  OtherLettersAmount: 51
-  _allLettersCount: 107
+  OtherLettersAmount: 44
+  _allLettersCount: 100
   Minutes: 15
   Seconds: 0

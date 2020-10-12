@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Level 8
   m_EditorClassIdentifier: 
   Words:
-  - the hard days
-  - are what make
-  - you stronger
+  - the hard
+  - days
+  - are what
+  - make you
+  - stronger
   MainLettersAmount: 2
   OtherLettersAmount: 42
   _allLettersCount: 108

@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Words:
   - if you obey
-  - all the rules
-  - you miss all
-  - the fun
+  - all the
+  - rules
+  - you miss
+  - all the
+  - fun
   MainLettersAmount: 2
-  OtherLettersAmount: 54
-  _allLettersCount: 126
+  OtherLettersAmount: 69
+  _allLettersCount: 141
   Minutes: 15
   Seconds: 0

@@ -15,11 +15,11 @@ MonoBehaviour:
   Words:
   - work hard
   - in silence
-  - ' let your'
+  - let your
   - success
   - be the noise
   MainLettersAmount: 2
-  OtherLettersAmount: 60
-  _allLettersCount: 142
+  OtherLettersAmount: 42
+  _allLettersCount: 124
   Minutes: 20
   Seconds: 0

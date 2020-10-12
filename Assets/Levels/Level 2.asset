@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Level 2
   m_EditorClassIdentifier: 
   Words:
-  - do one thing
+  - do one  thing
   - every day
-  - that scares you
+  - 'that '
+  - scares  you
   MainLettersAmount: 2
   OtherLettersAmount: 42
   _allLettersCount: 104

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Level 14
   m_EditorClassIdentifier: 
   Words:
-  - in the middle
+  - in the   middle
   - of every
   - difficulty
   - lies
   - opportunity
   MainLettersAmount: 2
-  OtherLettersAmount: 14
-  _allLettersCount: 100
+  OtherLettersAmount: 60
+  _allLettersCount: 146
   Minutes: 15
   Seconds: 0
