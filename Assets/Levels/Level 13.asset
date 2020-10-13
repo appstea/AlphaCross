@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Level 13
   m_EditorClassIdentifier: 
   Words:
-  - apple
+  - 'apple '
   - a day
-  - keeps the
+  - keeps  the
   - doctor
   - away
   MainLettersAmount: 2
