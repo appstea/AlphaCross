@@ -17,8 +17,8 @@ MonoBehaviour:
   - better
   - than
   - perfect
-  MainLettersAmount: 2
-  OtherLettersAmount: 134
-  _allLettersCount: 180
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 23
   Minutes: 15
   Seconds: 0

@@ -16,8 +16,8 @@ MonoBehaviour:
   - make    each day
   - your
   - masterpiece
-  MainLettersAmount: 2
-  OtherLettersAmount: 88
-  _allLettersCount: 140
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 26
   Minutes: 15
   Seconds: 0

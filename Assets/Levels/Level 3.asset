@@ -17,8 +17,8 @@ MonoBehaviour:
   - thinking
   - start
   - doing
-  MainLettersAmount: 4
-  OtherLettersAmount: 17
-  _allLettersCount: 105
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 22
   Minutes: 15
   Seconds: 0

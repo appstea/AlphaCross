@@ -17,8 +17,8 @@ MonoBehaviour:
   - way you
   - can shake
   - the world
-  MainLettersAmount: 2
-  OtherLettersAmount: 54
-  _allLettersCount: 116
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 31
   Minutes: 15
   Seconds: 0

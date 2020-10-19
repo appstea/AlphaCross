@@ -18,8 +18,8 @@ MonoBehaviour:
   - well we rise
   - after
   - falling
-  MainLettersAmount: 2
-  OtherLettersAmount: 60
-  _allLettersCount: 140
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 40
   Minutes: 20
   Seconds: 0

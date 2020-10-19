@@ -17,8 +17,8 @@ MonoBehaviour:
   - all the  time
   - makes a
   - desert
-  MainLettersAmount: 2
-  OtherLettersAmount: 94
-  _allLettersCount: 154
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 30
   Minutes: 15
   Seconds: 0

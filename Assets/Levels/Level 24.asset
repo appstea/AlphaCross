@@ -17,8 +17,8 @@ MonoBehaviour:
   - can do
   - is the  best
   - we can  do
-  MainLettersAmount: 2
-  OtherLettersAmount: 124
-  _allLettersCount: 176
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 26
   Minutes: 15
   Seconds: 0

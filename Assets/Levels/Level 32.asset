@@ -17,8 +17,8 @@ MonoBehaviour:
   - the risk
   - or lose
   - the chance
-  MainLettersAmount: 2
-  OtherLettersAmount: 174
-  _allLettersCount: 226
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 26
   Minutes: 15
   Seconds: 0

@@ -18,8 +18,8 @@ MonoBehaviour:
   - anything
   - that    made
   - you     smile
-  MainLettersAmount: 2
-  OtherLettersAmount: 78
-  _allLettersCount: 148
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 35
   Minutes: 15
   Seconds: 0

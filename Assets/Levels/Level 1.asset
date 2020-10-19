@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Level 1
   m_EditorClassIdentifier: 
   Words:
-  - challenge
-  - your
-  - limits
-  MainLettersAmount: 2
-  OtherLettersAmount: 33
-  _allLettersCount: 71
-  Minutes: 15
+  - a winner
+  - is a dreamer
+  - who     never
+  - gives up
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 32
+  Minutes: 20
   Seconds: 0

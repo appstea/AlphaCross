@@ -17,8 +17,8 @@ MonoBehaviour:
   - revenge
   - is massive
   - success
-  MainLettersAmount: 2
-  OtherLettersAmount: 131
-  _allLettersCount: 191
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 30
   Minutes: 15
   Seconds: 0

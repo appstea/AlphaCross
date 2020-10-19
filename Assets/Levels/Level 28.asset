@@ -16,8 +16,8 @@ MonoBehaviour:
   - believe
   - you can
   - and you will
-  MainLettersAmount: 2
-  OtherLettersAmount: 133
-  _allLettersCount: 179
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 23
   Minutes: 15
   Seconds: 0

@@ -17,8 +17,8 @@ MonoBehaviour:
   - makes
   - progress
   - not perfect
-  MainLettersAmount: 2
-  OtherLettersAmount: 115
-  _allLettersCount: 177
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 31
   Minutes: 15
   Seconds: 0

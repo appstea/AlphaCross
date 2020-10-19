@@ -17,8 +17,8 @@ MonoBehaviour:
   - vision
   - trust   the
   - process
-  MainLettersAmount: 2
-  OtherLettersAmount: 44
-  _allLettersCount: 100
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 28
   Minutes: 15
   Seconds: 0

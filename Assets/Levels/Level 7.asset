@@ -16,8 +16,8 @@ MonoBehaviour:
   - one day
   - or day one
   - you     decide
-  MainLettersAmount: 2
-  OtherLettersAmount: 60
-  _allLettersCount: 106
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 23
   Minutes: 15
   Seconds: 0

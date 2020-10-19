@@ -17,8 +17,8 @@ MonoBehaviour:
   - wounds
   - into
   - wisdom
-  MainLettersAmount: 2
-  OtherLettersAmount: 97
-  _allLettersCount: 145
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 24
   Minutes: 15
   Seconds: 0

@@ -18,8 +18,8 @@ MonoBehaviour:
   - let your
   - success
   - be the noise
-  MainLettersAmount: 2
-  OtherLettersAmount: 42
-  _allLettersCount: 124
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 41
   Minutes: 20
   Seconds: 0

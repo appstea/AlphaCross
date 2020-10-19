@@ -18,8 +18,8 @@ MonoBehaviour:
   - are what
   - make you
   - stronger
-  MainLettersAmount: 2
-  OtherLettersAmount: 42
-  _allLettersCount: 108
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 33
   Minutes: 15
   Seconds: 0

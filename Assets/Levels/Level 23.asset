@@ -19,8 +19,8 @@ MonoBehaviour:
   - can do
   - until   you
   - try
-  MainLettersAmount: 2
-  OtherLettersAmount: 97
-  _allLettersCount: 167
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 35
   Minutes: 20
   Seconds: 0

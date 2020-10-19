@@ -17,8 +17,8 @@ MonoBehaviour:
   - you can
   - imagine
   - is real
-  MainLettersAmount: 2
-  OtherLettersAmount: 42
-  _allLettersCount: 100
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 29
   Minutes: 15
   Seconds: 0

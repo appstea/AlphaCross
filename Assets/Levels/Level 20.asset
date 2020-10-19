@@ -18,8 +18,8 @@ MonoBehaviour:
   - productive
   - instead of
   - busy
-  MainLettersAmount: 2
-  OtherLettersAmount: 72
-  _allLettersCount: 142
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 35
   Minutes: 20
   Seconds: 0

@@ -18,8 +18,8 @@ MonoBehaviour:
   - and      amazing
   - things  will
   - happen
-  MainLettersAmount: 2
-  OtherLettersAmount: 53
-  _allLettersCount: 133
+  MainLettersAmount: 1
+  OtherLettersAmount: 0
+  _allLettersCount: 40
   Minutes: 15
   Seconds: 0
