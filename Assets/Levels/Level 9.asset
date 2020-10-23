@@ -20,5 +20,5 @@ MonoBehaviour:
   MainLettersAmount: 1
   OtherLettersAmount: 0
   _allLettersCount: 31
-  Minutes: 15
+  Minutes: 10
   Seconds: 0
