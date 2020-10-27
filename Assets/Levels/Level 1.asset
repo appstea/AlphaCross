@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Words:
   - a winner
-  - is a dreamer
+  - is a    dreamer
   - who     never
   - gives up
   MainLettersAmount: 1
